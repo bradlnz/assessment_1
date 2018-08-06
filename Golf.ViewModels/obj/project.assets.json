@@ -1227,7 +1227,7 @@
           }
         }
       },
-      "NETStandard.Library/2.0.3": {
+      "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -4066,13 +4066,14 @@
         "version.txt"
       ]
     },
-    "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+    "NETStandard.Library/2.0.1": {
+      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "type": "package",
-      "path": "netstandard.library/2.0.3",
+      "path": "netstandard.library/2.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
         "build/netstandard2.0/ref/System.AppContext.dll",
@@ -4189,7 +4190,7 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.3.nupkg.sha512",
+        "netstandard.library.2.0.1.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     },
@@ -8376,27 +8377,27 @@
       "FluentValidation.AspNetCore >= 7.6.104",
       "Golf.Entities >= 1.0.0",
       "Microsoft.IdentityModel.Tokens >= 5.2.4",
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Brad\\.nuget\\packages\\": {},
+    "C:\\Users\\bradm\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brad\\Documents\\assessment_data\\Golf.ViewModels\\Golf.ViewModels.csproj",
+      "projectUniqueName": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.ViewModels\\Golf.ViewModels.csproj",
       "projectName": "Golf.ViewModels",
-      "projectPath": "C:\\Users\\Brad\\Documents\\assessment_data\\Golf.ViewModels\\Golf.ViewModels.csproj",
-      "packagesPath": "C:\\Users\\Brad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brad\\Documents\\assessment_data\\Golf.ViewModels\\obj\\",
+      "projectPath": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.ViewModels\\Golf.ViewModels.csproj",
+      "packagesPath": "C:\\Users\\bradm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Brad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bradm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8409,8 +8410,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Brad\\Documents\\assessment_data\\Golf.Entities\\Golf.Entities.csproj": {
-              "projectPath": "C:\\Users\\Brad\\Documents\\assessment_data\\Golf.Entities\\Golf.Entities.csproj"
+            "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Entities\\Golf.Entities.csproj": {
+              "projectPath": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Entities\\Golf.Entities.csproj"
             }
           }
         }
@@ -8443,7 +8444,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.3, )",
+            "version": "[2.0.1, )",
             "autoReferenced": true
           }
         },

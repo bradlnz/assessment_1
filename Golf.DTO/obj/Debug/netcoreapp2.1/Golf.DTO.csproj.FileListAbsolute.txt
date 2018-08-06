@@ -1,4 +1,0 @@
-C:\Users\Brad\Documents\assessment_data\Golf.DTO\obj\Debug\netcoreapp2.1\Golf.DTO.csprojAssemblyReference.cache
-C:\Users\Brad\Documents\assessment_data\Golf.DTO\obj\Debug\netcoreapp2.1\Golf.DTO.csproj.CoreCompileInputs.cache
-C:\Users\Brad\Documents\assessment_data\Golf.DTO\obj\Debug\netcoreapp2.1\Golf.DTO.AssemblyInfoInputs.cache
-C:\Users\Brad\Documents\assessment_data\Golf.DTO\obj\Debug\netcoreapp2.1\Golf.DTO.AssemblyInfo.cs

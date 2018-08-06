@@ -22,3 +22,15 @@ C:\Users\Brad\Documents\assessment_data\Golf.Helpers\obj\Debug\netstandard2.0\Go
 C:\Users\Brad\Documents\assessment_data\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.csproj.CopyComplete
 C:\Users\Brad\Documents\assessment_data\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.dll
 C:\Users\Brad\Documents\assessment_data\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.pdb
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\bin\Debug\netstandard2.0\Golf.Helpers.deps.json
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\bin\Debug\netstandard2.0\Golf.Helpers.dll
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\bin\Debug\netstandard2.0\Golf.Helpers.pdb
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\bin\Debug\netstandard2.0\Golf.Models.dll
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\bin\Debug\netstandard2.0\Golf.Models.pdb
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.csprojResolveAssemblyReference.cache
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.AssemblyInfoInputs.cache
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.AssemblyInfo.cs
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.csproj.CopyComplete
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.dll
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Helpers\obj\Debug\netstandard2.0\Golf.Helpers.pdb
