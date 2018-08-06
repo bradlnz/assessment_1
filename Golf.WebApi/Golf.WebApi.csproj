@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Golf.Helpers\Golf.Helpers.csproj" />
+    <ProjectReference Include="..\Golf.Models\Golf.Models.csproj" />
+    <ProjectReference Include="..\Golf.Repo\Golf.Repo.csproj" />
+    <ProjectReference Include="..\Golf.Services\Golf.Services.csproj" />
+    <ProjectReference Include="..\Golf.ViewModels\Golf.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+C:\Users\Brad\source\repos\golf\golf\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.csproj.CoreCompileInputs.cache
+C:\Users\Brad\source\repos\golf\golf\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.AssemblyInfoInputs.cache
+C:\Users\Brad\source\repos\golf\golf\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.AssemblyInfo.cs
+C:\Users\Brad\source\repos\golf\golf\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.deps.json
+C:\Users\Brad\source\repos\golf\golf\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.dll
+C:\Users\Brad\source\repos\golf\golf\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.pdb
+C:\Users\Brad\source\repos\golf\golf\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.dll
+C:\Users\Brad\source\repos\golf\golf\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.deps.json
+C:\Users\Brad\Documents\assessment_data\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.csproj.CoreCompileInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.AssemblyInfoInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.AssemblyInfo.cs
+C:\Users\Brad\Documents\assessment_data\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.csprojAssemblyReference.cache

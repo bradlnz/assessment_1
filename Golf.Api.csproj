@@ -1,0 +1,94 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Golf.DTO\**" />
+    <Compile Remove="Golf.Entities\**" />
+    <Compile Remove="Golf.Helpers\**" />
+    <Compile Remove="Golf.Models\**" />
+    <Compile Remove="Golf.RepositoryOld\**" />
+    <Compile Remove="Golf.Repository\**" />
+    <Compile Remove="Golf.Repo\**" />
+    <Compile Remove="Golf.Services\**" />
+    <Compile Remove="Golf.ViewModels\**" />
+    <Compile Remove="Golf.Web\**" />
+    <Content Remove="Golf.DTO\**" />
+    <Content Remove="Golf.Entities\**" />
+    <Content Remove="Golf.Helpers\**" />
+    <Content Remove="Golf.Models\**" />
+    <Content Remove="Golf.RepositoryOld\**" />
+    <Content Remove="Golf.Repository\**" />
+    <Content Remove="Golf.Repo\**" />
+    <Content Remove="Golf.Services\**" />
+    <Content Remove="Golf.ViewModels\**" />
+    <Content Remove="Golf.Web\**" />
+    <EmbeddedResource Remove="Golf.DTO\**" />
+    <EmbeddedResource Remove="Golf.Entities\**" />
+    <EmbeddedResource Remove="Golf.Helpers\**" />
+    <EmbeddedResource Remove="Golf.Models\**" />
+    <EmbeddedResource Remove="Golf.RepositoryOld\**" />
+    <EmbeddedResource Remove="Golf.Repository\**" />
+    <EmbeddedResource Remove="Golf.Repo\**" />
+    <EmbeddedResource Remove="Golf.Services\**" />
+    <EmbeddedResource Remove="Golf.ViewModels\**" />
+    <EmbeddedResource Remove="Golf.Web\**" />
+    <None Remove="Golf.DTO\**" />
+    <None Remove="Golf.Entities\**" />
+    <None Remove="Golf.Helpers\**" />
+    <None Remove="Golf.Models\**" />
+    <None Remove="Golf.RepositoryOld\**" />
+    <None Remove="Golf.Repository\**" />
+    <None Remove="Golf.Repo\**" />
+    <None Remove="Golf.Services\**" />
+    <None Remove="Golf.ViewModels\**" />
+    <None Remove="Golf.Web\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="FluentValidation" Version="7.6.104" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="2.8.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.1.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.2.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+    <!--https://github.com/aspnet/EntityFrameworkCore/issues/8996-->
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Golf.Entities\Golf.Entities.csproj" />
+    <ProjectReference Include="Golf.Helpers\Golf.Helpers.csproj" />
+    <ProjectReference Include="Golf.Models\Golf.Models.csproj" />
+    <ProjectReference Include="Golf.Services\Golf.Services.csproj" />
+    <ProjectReference Include="Golf.ViewModels\Golf.ViewModels.csproj" />
+  </ItemGroup>
+  <Target Name="AngularBuild" AfterTargets="Build">
+    <Exec Command="npm run build" />
+  </Target>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind />
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup> 
+</Project>

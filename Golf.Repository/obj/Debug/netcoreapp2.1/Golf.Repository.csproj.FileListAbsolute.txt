@@ -1,0 +1,16 @@
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Repository.deps.json
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Repository.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Repository.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Entities.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Helpers.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Models.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Entities.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Helpers.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\bin\Debug\netcoreapp2.1\Golf.Models.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\obj\Debug\netcoreapp2.1\Golf.Repository.csprojAssemblyReference.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\obj\Debug\netcoreapp2.1\Golf.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\obj\Debug\netcoreapp2.1\Golf.Repository.AssemblyInfoInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\obj\Debug\netcoreapp2.1\Golf.Repository.AssemblyInfo.cs
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\obj\Debug\netcoreapp2.1\Golf.Repository.csproj.CopyComplete
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\obj\Debug\netcoreapp2.1\Golf.Repository.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repository\obj\Debug\netcoreapp2.1\Golf.Repository.pdb

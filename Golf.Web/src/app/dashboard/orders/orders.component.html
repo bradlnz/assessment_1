@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="container">
+    <div class="col-md-12">
+      <a href="/dashboard/order_add" class="btn btn-primary" ng-click="">Add Order</a>
+      <button class="btn" ng-click="" style="float: right;">Import from CSV</button>
+    </div>
+  </div>
+
+  <br /><br />
+</div>
+<div clsss="row">
+  <div class="container">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Number</th>
+          <th scope="col">Date Required</th>
+          <th scope="col">Description</th>
+          <th scope="col">Components</th>
+          <th scope="col">Created</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of orders" (click)="edit(item.id)">
+          <td>{{item.id}}</td>
+          <td>{{item.number}}</td>
+          <td>{{item.dateRequired}}</td>
+          <td>{{item.description}}</td>
+          <td></td>
+          <td>{{item.created}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

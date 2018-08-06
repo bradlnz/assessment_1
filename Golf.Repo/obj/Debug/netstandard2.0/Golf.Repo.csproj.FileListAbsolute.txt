@@ -1,0 +1,16 @@
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Repo.deps.json
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Repo.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Repo.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Entities.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Helpers.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Models.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Entities.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Helpers.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\bin\Debug\netstandard2.0\Golf.Models.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\obj\Debug\netstandard2.0\Golf.Repo.csprojAssemblyReference.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\obj\Debug\netstandard2.0\Golf.Repo.csproj.CoreCompileInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\obj\Debug\netstandard2.0\Golf.Repo.AssemblyInfoInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\obj\Debug\netstandard2.0\Golf.Repo.AssemblyInfo.cs
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\obj\Debug\netstandard2.0\Golf.Repo.csproj.CopyComplete
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\obj\Debug\netstandard2.0\Golf.Repo.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Repo\obj\Debug\netstandard2.0\Golf.Repo.pdb

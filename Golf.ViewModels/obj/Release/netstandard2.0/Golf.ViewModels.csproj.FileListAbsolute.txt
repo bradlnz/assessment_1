@@ -1,0 +1,16 @@
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.ViewModels.deps.json
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.ViewModels.dll
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.ViewModels.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.Entities.dll
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.Helpers.dll
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.Models.dll
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.Entities.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.Helpers.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\bin\Release\netstandard2.0\Golf.Models.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\obj\Release\netstandard2.0\Golf.ViewModels.csprojAssemblyReference.cache
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\obj\Release\netstandard2.0\Golf.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\obj\Release\netstandard2.0\Golf.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\obj\Release\netstandard2.0\Golf.ViewModels.AssemblyInfo.cs
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\obj\Release\netstandard2.0\Golf.ViewModels.csproj.CopyComplete
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\obj\Release\netstandard2.0\Golf.ViewModels.dll
+C:\Users\Brad\Documents\assessment_data\Golf.ViewModels\obj\Release\netstandard2.0\Golf.ViewModels.pdb

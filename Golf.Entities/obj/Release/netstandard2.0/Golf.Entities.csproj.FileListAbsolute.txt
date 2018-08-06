@@ -1,0 +1,14 @@
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\bin\Release\netstandard2.0\Golf.Entities.deps.json
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\bin\Release\netstandard2.0\Golf.Entities.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\bin\Release\netstandard2.0\Golf.Entities.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\bin\Release\netstandard2.0\Golf.Helpers.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\bin\Release\netstandard2.0\Golf.Models.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\bin\Release\netstandard2.0\Golf.Helpers.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\bin\Release\netstandard2.0\Golf.Models.pdb
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\obj\Release\netstandard2.0\Golf.Entities.csprojAssemblyReference.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\obj\Release\netstandard2.0\Golf.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\obj\Release\netstandard2.0\Golf.Entities.AssemblyInfoInputs.cache
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\obj\Release\netstandard2.0\Golf.Entities.AssemblyInfo.cs
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\obj\Release\netstandard2.0\Golf.Entities.csproj.CopyComplete
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\obj\Release\netstandard2.0\Golf.Entities.dll
+C:\Users\Brad\Documents\assessment_data\Golf.Entities\obj\Release\netstandard2.0\Golf.Entities.pdb
