@@ -1,0 +1,8 @@
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.0\Golf.Web.csprojResolveAssemblyReference.cache
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.0\Golf.Web.csproj.CoreCompileInputs.cache
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.0\Golf.Web.AssemblyInfoInputs.cache
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.0\Golf.Web.AssemblyInfo.cs
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\bin\Debug\netcoreapp2.0\Golf.Web.deps.json
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\bin\Debug\netcoreapp2.0\Golf.Web.runtimeconfig.json
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\bin\Debug\netcoreapp2.0\Golf.Web.runtimeconfig.dev.json
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\bin\Debug\netcoreapp2.0\Golf.Web.dll

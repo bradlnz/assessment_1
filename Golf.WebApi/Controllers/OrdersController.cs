@@ -21,7 +21,7 @@ namespace Golf.Api.Controllers
     [HttpGet]
     public IActionResult Get(Guid? id = null)
     {
-      if(id != null && id.HasValue)
+      if(id != null)
       {
         var order = _orderService.GetOrderById(id.Value);
 
@@ -33,9 +33,9 @@ namespace Golf.Api.Controllers
     }
 
     [HttpPost]
-    public void Save([FromBody] OrderViewModel order)
+    public bool Save([FromBody] OrderViewModel order)
     {
-      _orderService.SaveOrder(order);
+      return _orderService.SaveOrder(order);
     }
   }
 }

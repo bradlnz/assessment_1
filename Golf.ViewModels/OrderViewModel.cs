@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using FluentValidation.Attributes;
+using Golf.ViewModels.Validations;
 
 namespace Golf.ViewModels
 {
-   public class OrderViewModel
+  [Validator(typeof(OrderViewModelValidator))]
+  public class OrderViewModel
     {
     public Guid Id { get; set; }
 

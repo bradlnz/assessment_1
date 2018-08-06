@@ -18,9 +18,9 @@ C:\Users\Brad\Documents\assessment_data\Golf.Models\obj\Debug\netstandard2.0\Gol
 C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.deps.json
 C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.dll
 C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\bin\Debug\netstandard2.0\Golf.Models.pdb
-C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.csprojResolveAssemblyReference.cache
 C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.csproj.CoreCompileInputs.cache
 C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.AssemblyInfoInputs.cache
 C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.AssemblyInfo.cs
 C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.dll
 C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.pdb
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Models\obj\Debug\netstandard2.0\Golf.Models.csprojResolveAssemblyReference.cache

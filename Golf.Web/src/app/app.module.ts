@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import {
   ReactiveFormsModule,
   FormsModule,
@@ -31,6 +32,7 @@ import { ConfigService } from './shared/utils/config.service';
     HeaderComponent      
   ],
   imports: [
+    RouterModule,
     AccountModule,
     DashboardModule,
     BrowserModule,

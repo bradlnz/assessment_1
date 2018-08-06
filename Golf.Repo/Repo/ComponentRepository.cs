@@ -10,22 +10,22 @@ namespace Golf.Repo
   public class ComponentRepository : IComponentRepository
   {
 
-    private readonly ApplicationDbContext context;
+    private readonly ApplicationDbContext _context;
 
-    public ComponentRepository(ApplicationDbContext _context)
+    public ComponentRepository(ApplicationDbContext context)
     {
-      context = _context;
+      this._context = context;
     }
 
     public Component Component(Guid id)
     {
-      IQueryable<Component> queryable = context.Components;
-      return queryable.Where(a => a.Id == id).FirstOrDefault();
+      IQueryable<Component> queryable = _context.Components;
+      return queryable.FirstOrDefault(a => a.Id == id);
     }
 
     public List<Component> Components(Guid id)
     {
-      IQueryable<Component> queryable = context.Components;
+      IQueryable<Component> queryable = _context.Components;
       return queryable.Where(a => a.Order.Id == id).ToList();
     }
 
@@ -36,14 +36,14 @@ namespace Golf.Repo
       if (result != null)
       {
         component.Modified = DateTime.Now;
-        context.Update(component);
+        _context.Update(component);
       }
       else
       {
         component.Created = DateTime.Now;
-        context.Add(component);
+        _context.Add(component);
       }
-      context.SaveChanges();
+      _context.SaveChanges();
     }
   }
 }

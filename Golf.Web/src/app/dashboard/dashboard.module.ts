@@ -9,7 +9,7 @@ import {
   FormBuilder
 } from "@angular/forms";
 import { SharedModule }       from '../shared/modules/shared.module';
-
+import { RouterModule } from '@angular/router';
 import { routing }  from './dashboard.routing';
 import { RootComponent } from './root/root.component';
 import { HomeComponent } from './home/home.component';
@@ -24,6 +24,7 @@ import { OrderEditComponent } from './order_edit/order_edit.component';
 
 @NgModule({
   imports: [
+    RouterModule,
     CommonModule,
     ReactiveFormsModule,
     FormsModule,

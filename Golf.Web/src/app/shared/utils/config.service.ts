@@ -6,7 +6,7 @@ export class ConfigService {
     _apiURI : string;
  
     constructor() {
-      this._apiURI = 'http://golf-api-brad.azurewebsites.net/api';
+      this._apiURI = 'http://localhost:51457/api';
      }
  
      getApiURI() {

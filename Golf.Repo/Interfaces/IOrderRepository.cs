@@ -7,7 +7,7 @@ namespace Golf.Repository
 {
   public interface IOrderRepository
   {
-    void Save(Order Order);
+    bool Save(Order order);
     Order GetOrderById(Guid id);
     List<Order> Orders();
   }

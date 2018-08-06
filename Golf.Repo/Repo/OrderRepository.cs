@@ -9,53 +9,56 @@ namespace Golf.Repository
 {
   public class OrderRepository : IOrderRepository, IDisposable
   {
-    private readonly ApplicationDbContext context;
+    private readonly ApplicationDbContext _context;
 
-    public OrderRepository(ApplicationDbContext _context)
+    public OrderRepository(ApplicationDbContext context)
     {
-      context = _context;
+      this._context = context;
     }
 
     public Order GetOrderById(Guid id)
     {
-      IQueryable<Order> queryable = context.Orders;
-      return queryable.Where(a => a.Id == id).FirstOrDefault();
+      IQueryable<Order> queryable = _context.Orders;
+      return queryable.FirstOrDefault(a => a.Id == id);
     }
 
     public List<Order> Orders()
     {
-      IQueryable<Order> queryable = context.Orders;
+      IQueryable<Order> queryable = _context.Orders;
       return queryable.ToList();
     }
 
-    public void Save(Order Order)
+    public bool Save(Order order)
     {
-      var result = GetOrderById(Order.Id);
+      var result = GetOrderById(order.Id);
 
       if (result != null)
       {
-        Order.Modified = DateTime.Now;
-        context.Update(Order);
+        order.Modified = DateTime.Now;
+        _context.Update(order);
       } else
       {
-        Order.Created = DateTime.Now;
-        context.Add(Order);
+        order.Created = DateTime.Now;
+        _context.Add(order);
       }
-      context.SaveChanges();
+
+      _context.SaveChanges();
+
+      return true;
     }
 
-    private bool disposed = false;
+    private bool _disposed = false;
 
     protected virtual void Dispose(bool disposing)
     {
-      if (!this.disposed)
+      if (!this._disposed)
       {
         if (disposing)
         {
-          context.Dispose();
+          _context.Dispose();
         }
       }
-      this.disposed = true;
+      this._disposed = true;
     }
 
     public void Dispose()

@@ -10,7 +10,7 @@ namespace Golf.Services.Interface
 {
   public interface IOrderService
   {
-    void SaveOrder(OrderViewModel order);
+    bool SaveOrder(OrderViewModel order);
     List<Order> GetOrders();
     Order GetOrderById(Guid id);
   }

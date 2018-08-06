@@ -11,12 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var dashboard_service_1 = require("../services/dashboard.service");
 var OrderEditComponent = /** @class */ (function () {
-    function OrderEditComponent(dashboardService, route) {
+    function OrderEditComponent(dashboardService, route, location) {
         this.dashboardService = dashboardService;
         this.route = route;
+        this.location = location;
     }
     OrderEditComponent.prototype.createFormControls = function () {
         this.number = new forms_1.FormControl("", forms_1.Validators.required);
@@ -46,6 +48,7 @@ var OrderEditComponent = /** @class */ (function () {
             console.log("Form Submitted!");
             this.dashboardService.saveOrder(this.order.value).subscribe(function (response) {
                 console.log(response);
+                location.href = "/dashboard/orders";
             }, function (error) {
                 //this.notificationService.printErrorMessage(error);
             });
@@ -57,7 +60,7 @@ var OrderEditComponent = /** @class */ (function () {
             templateUrl: './order_edit.component.html',
             styleUrls: ['./order_edit.component.scss']
         }),
-        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, router_1.ActivatedRoute])
+        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, router_1.ActivatedRoute, common_1.Location])
     ], OrderEditComponent);
     return OrderEditComponent;
 }());

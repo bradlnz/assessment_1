@@ -15,7 +15,6 @@ var app_routing_1 = require("./app.routing");
 /* App Root */
 var app_component_1 = require("./app.component");
 var header_component_1 = require("./header/header.component");
-var home_component_1 = require("./home/home.component");
 /* Account Imports */
 var account_module_1 = require("./account/account.module");
 /* Dashboard Imports */
@@ -28,8 +27,7 @@ var AppModule = /** @class */ (function () {
         core_1.NgModule({
             declarations: [
                 app_component_1.AppComponent,
-                header_component_1.HeaderComponent,
-                home_component_1.HomeComponent
+                header_component_1.HeaderComponent
             ],
             imports: [
                 account_module_1.AccountModule,

@@ -5,6 +5,7 @@ using Golf.Services.Interface;
 using Golf.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Golf.Services
@@ -29,16 +30,17 @@ namespace Golf.Services
       return _orderRepository.GetOrderById(id);
     }
 
-    public void SaveOrder(OrderViewModel order)
+    public bool SaveOrder(OrderViewModel order)
     {
-      var orderEntity = new Order()
+      var existingOrder = _orderRepository.Orders().FirstOrDefault(a => a.Number == order.Number);
+
+      var orderEntity = new Order
       {
         Number = order.Number,
         DateRequired = order.DateRequired,
-        Description = order.Description,
+        Description = order.Description
       };
-
-      _orderRepository.Save(orderEntity);
+      return _orderRepository.Save(existingOrder ?? orderEntity);
     }
   }
 }

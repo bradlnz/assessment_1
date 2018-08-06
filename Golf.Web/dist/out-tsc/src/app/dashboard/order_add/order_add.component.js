@@ -10,11 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var dashboard_service_1 = require("../services/dashboard.service");
 var OrderAddComponent = /** @class */ (function () {
-    function OrderAddComponent(dashboardService) {
+    function OrderAddComponent(dashboardService, location) {
         this.dashboardService = dashboardService;
+        this.location = location;
     }
     OrderAddComponent.prototype.createFormControls = function () {
         this.number = new forms_1.FormControl("", forms_1.Validators.required);
@@ -38,6 +40,7 @@ var OrderAddComponent = /** @class */ (function () {
             console.log("Form Submitted!");
             this.dashboardService.saveOrder(this.order.value).subscribe(function (response) {
                 console.log(response);
+                location.href = "/dashboard/orders";
             }, function (error) {
                 //this.notificationService.printErrorMessage(error);
             });
@@ -49,7 +52,7 @@ var OrderAddComponent = /** @class */ (function () {
             templateUrl: './order_add.component.html',
             styleUrls: ['./order_add.component.scss']
         }),
-        __metadata("design:paramtypes", [dashboard_service_1.DashboardService])
+        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, common_1.Location])
     ], OrderAddComponent);
     return OrderAddComponent;
 }());

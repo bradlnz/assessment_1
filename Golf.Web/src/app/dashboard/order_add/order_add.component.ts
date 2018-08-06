@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from "@angular/router";
 import {
   ReactiveFormsModule,
   FormsModule,
@@ -10,6 +11,7 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { DashboardService } from '../services/dashboard.service';
+
 import { Order } from '../../order';
 @Component({
   selector: 'app-order_add',
@@ -23,7 +25,7 @@ export class OrderAddComponent implements OnInit {
   dateRequired: FormControl;
   description: FormControl;
 
-  constructor(private dashboardService: DashboardService) { }
+  constructor(private dashboardService: DashboardService, private router: Router) { }
 
   createFormControls() {
     this.number = new FormControl("", Validators.required);
@@ -51,9 +53,9 @@ export class OrderAddComponent implements OnInit {
 
 
       this.dashboardService.saveOrder(this.order.value).subscribe((response) => {
-        console.log(response);
-      
-      },
+
+          this.router.navigate(['dashboard', 'orders']);
+        },
         error => {
           //this.notificationService.printErrorMessage(error);
         });

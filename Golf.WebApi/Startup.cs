@@ -49,9 +49,9 @@ namespace Golf.Api
       services.AddScoped<ApplicationDbContext>();
 
       services.TryAddTransient<IOrderRepository, OrderRepository>();
-  
+
       services.TryAddTransient<IOrderService, OrderService>();
- 
+
 
 
 
@@ -99,10 +99,12 @@ namespace Golf.Api
 
       services.AddAuthorization(options =>
       {
-        options.AddPolicy("WebAccess", policy => {
+        options.AddPolicy("WebAccess", policy =>
+        {
           policy.RequireClaim("WebAccess", "Manager");
         });
-        options.AddPolicy("AppAccess", policy => {
+        options.AddPolicy("AppAccess", policy =>
+        {
           policy.RequireClaim("AppAccess", "Production");
           policy.RequireClaim("AppAccess", "Manager");
         });
@@ -121,6 +123,7 @@ namespace Golf.Api
       builder = new IdentityBuilder(builder.UserType, typeof(IdentityRole), builder.Services);
       builder.AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
+      services.AddCors();
 
       services.AddAutoMapper();
       services.AddMvc().AddControllersAsServices();
@@ -152,8 +155,14 @@ namespace Golf.Api
                       });
           });
 
-     app.UseAuthentication();
-     
+      app.UseCors(builder => builder
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials());
+
+      app.UseAuthentication();
+    
       app.UseDefaultFiles();
       app.UseStaticFiles();
       app.UseMvc();
