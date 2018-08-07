@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 
 import { Order } from '../../order'; 
+import { ComponentModel } from '../../component'; 
 import { ConfigService } from '../../shared/utils/config.service';
 
 import {BaseService} from '../../shared/services/base.service';
@@ -51,6 +52,40 @@ export class DashboardService extends BaseService {
     headers.append('Authorization', `Bearer ${authToken}`);
 
     return this.http.post(this.baseUrl + "/orders/save", order, { headers })
+      .map(response => response.json())
+      .catch(this.handleError);
+  }
+
+
+  getComponents(): Observable<Array<ComponentModel>> {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let authToken = localStorage.getItem('auth_token');
+    headers.append('Authorization', `Bearer ${authToken}`);
+
+    return this.http.get(this.baseUrl + "/component/get", { headers })
+      .map(response => response.json())
+      .catch(this.handleError);
+  }
+
+  getComponent(id: string): Observable<ComponentModel> {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let authToken = localStorage.getItem('auth_token');
+    headers.append('Authorization', `Bearer ${authToken}`);
+
+    return this.http.get(this.baseUrl + "/components/" + id, { headers })
+      .map(response => response.json())
+      .catch(this.handleError);
+  }
+
+  saveComponent(component: ComponentModel) {
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let authToken = localStorage.getItem('auth_token');
+    headers.append('Authorization', `Bearer ${authToken}`);
+
+    return this.http.post(this.baseUrl + "/components/save", component, { headers })
       .map(response => response.json())
       .catch(this.handleError);
   }

@@ -11,7 +11,9 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { DashboardService } from '../services/dashboard.service';
+
 import { Order } from '../../order';
+import { ComponentModel } from '../../component';
 @Component({
   selector: 'app-order_edit',
   templateUrl: './order_edit.component.html',
@@ -23,6 +25,7 @@ export class OrderEditComponent implements OnInit {
   number: FormControl;
   dateRequired: FormControl;
   description: FormControl;
+  components: ComponentModel[];
 
   constructor(private dashboardService: DashboardService, private route: ActivatedRoute, private router: Router) { }
 
@@ -47,8 +50,14 @@ export class OrderEditComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.dashboardService.getOrder(params.id).subscribe(response => {
         this.order.patchValue(response);
-      })
+
+        console.log(response);
+
+        this.components = response.components;
+      });
     });
+
+
   }
 
   onSubmit() {

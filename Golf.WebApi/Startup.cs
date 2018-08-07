@@ -19,6 +19,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
 using Golf.Models;
 using Golf.Entities;
+using Golf.Repo;
 using Golf.Services.Interface;
 using Golf.Services;
 
@@ -52,7 +53,9 @@ namespace Golf.Api
 
       services.TryAddTransient<IOrderService, OrderService>();
 
+      services.TryAddTransient<IComponentRepository, ComponentRepository>();
 
+      services.TryAddTransient<IComponentService, ComponentService>();
 
 
       var jwtAppSettingOptions = Configuration.GetSection(nameof(JwtIssuerOptions));

@@ -29,7 +29,13 @@ namespace Golf.Repo
       return queryable.Where(a => a.Order.Id == id).ToList();
     }
 
-    public void Save(Component component)
+    public List<Component> Components()
+    {
+      IQueryable<Component> queryable = _context.Components;
+      return queryable.ToList();
+    }
+
+    public bool Save(Component component)
     {
       var result = Component(component.Id);
 
@@ -44,6 +50,7 @@ namespace Golf.Repo
         _context.Add(component);
       }
       _context.SaveChanges();
+      return true;
     }
   }
 }

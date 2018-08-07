@@ -7,8 +7,9 @@ namespace Golf.Repository
 {
   public interface IComponentRepository
   {
-    void Save(Component component);
+    bool Save(Component component);
     List<Component> Components(Guid id);
     Component Component(Guid id);
+    List<Component> Components();
   }
 }

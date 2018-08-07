@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Golf.Repository
 {
@@ -18,13 +19,13 @@ namespace Golf.Repository
 
     public Order GetOrderById(Guid id)
     {
-      IQueryable<Order> queryable = _context.Orders;
+      IQueryable<Order> queryable = _context.Orders.Include(a => a.Components);
       return queryable.FirstOrDefault(a => a.Id == id);
     }
 
     public List<Order> Orders()
     {
-      IQueryable<Order> queryable = _context.Orders;
+      IQueryable<Order> queryable = _context.Orders.Include(a => a.Components);
       return queryable.ToList();
     }
 

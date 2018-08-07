@@ -20,8 +20,6 @@ import { OrdersComponent } from './orders/orders.component';
 import { OrderAddComponent } from './order_add/order_add.component';
 import { OrderEditComponent } from './order_edit/order_edit.component';
 
-
-
 @NgModule({
   imports: [
     RouterModule,
