@@ -1,5 +1,5 @@
-import Component = require("./component");
-import ComponentModel = Component.ComponentModel;
+import { ComponentModel } from "./component";
+
 
 export class Order {
   number: string;
