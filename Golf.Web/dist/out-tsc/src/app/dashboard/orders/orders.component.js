@@ -10,15 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
+var router_1 = require("@angular/router");
 var dashboard_service_1 = require("../services/dashboard.service");
 var OrdersComponent = /** @class */ (function () {
-    function OrdersComponent(dashboardService, location) {
+    function OrdersComponent(dashboardService, router) {
         this.dashboardService = dashboardService;
+        this.router = router;
     }
     OrdersComponent.prototype.edit = function (id) {
         console.log(id);
-        location.href = "/dashboard/order_edit/" + id;
+        this.router.navigate(['dashboard', 'order_edit', id]);
     };
     OrdersComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -33,9 +34,9 @@ var OrdersComponent = /** @class */ (function () {
             selector: 'app-orders',
             templateUrl: './orders.component.html',
             styleUrls: ['./orders.component.scss'],
-            providers: [common_1.Location]
+            providers: [router_1.RouterModule]
         }),
-        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, common_1.Location])
+        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, router_1.Router])
     ], OrdersComponent);
     return OrdersComponent;
 }());

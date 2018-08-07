@@ -37,3 +37,4 @@ C:\Users\bradm\source\repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.1\Golf.W
 C:\Users\bradm\source\repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.1\Golf.Web.dll
 C:\Users\bradm\source\repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.1\Golf.Web.pdb
 C:\Users\bradm\source\repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.1\Golf.Web.csproj.CopyComplete
+C:\Users\bradm\Source\Repos\assessment_1\Golf.Web\obj\Debug\netcoreapp2.1\Golf.Web.csprojResolveAssemblyReference.cache

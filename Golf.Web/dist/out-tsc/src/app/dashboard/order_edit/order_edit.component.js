@@ -11,14 +11,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var common_1 = require("@angular/common");
 var forms_1 = require("@angular/forms");
 var dashboard_service_1 = require("../services/dashboard.service");
 var OrderEditComponent = /** @class */ (function () {
-    function OrderEditComponent(dashboardService, route, location) {
+    function OrderEditComponent(dashboardService, route, router) {
         this.dashboardService = dashboardService;
         this.route = route;
-        this.location = location;
+        this.router = router;
     }
     OrderEditComponent.prototype.createFormControls = function () {
         this.number = new forms_1.FormControl("", forms_1.Validators.required);
@@ -39,16 +38,19 @@ var OrderEditComponent = /** @class */ (function () {
         this.route.params.subscribe(function (params) {
             _this.dashboardService.getOrder(params.id).subscribe(function (response) {
                 _this.order.patchValue(response);
+                console.log(response);
+                _this.components = response.components;
             });
         });
     };
     OrderEditComponent.prototype.onSubmit = function () {
+        var _this = this;
         console.log(this.order);
         if (this.order.valid) {
             console.log("Form Submitted!");
             this.dashboardService.saveOrder(this.order.value).subscribe(function (response) {
                 console.log(response);
-                location.href = "/dashboard/orders";
+                _this.router.navigate(['dashboard', 'orders']);
             }, function (error) {
                 //this.notificationService.printErrorMessage(error);
             });
@@ -60,7 +62,7 @@ var OrderEditComponent = /** @class */ (function () {
             templateUrl: './order_edit.component.html',
             styleUrls: ['./order_edit.component.scss']
         }),
-        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, router_1.ActivatedRoute, common_1.Location])
+        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, router_1.ActivatedRoute, router_1.Router])
     ], OrderEditComponent);
     return OrderEditComponent;
 }());

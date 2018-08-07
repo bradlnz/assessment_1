@@ -19,6 +19,10 @@ import { AuthGuard } from '../auth.guard';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderAddComponent } from './order_add/order_add.component';
 import { OrderEditComponent } from './order_edit/order_edit.component';
+import { ImportComponent } from './import/import.component';
+import { ComponentEditComponent } from './component-edit/component-edit.component';
+import { ComponentAddComponent } from './component-add/component-add.component';
+import { ComponentsComponent } from './components/components.component';
 
 @NgModule({
   imports: [
@@ -29,7 +33,7 @@ import { OrderEditComponent } from './order_edit/order_edit.component';
     routing,
     SharedModule
   ],
-  declarations: [RootComponent, HomeComponent, OrdersComponent, OrderAddComponent, OrderEditComponent],
+  declarations: [RootComponent, HomeComponent, OrdersComponent, OrderAddComponent, OrderEditComponent, ImportComponent, ComponentEditComponent, ComponentAddComponent, ComponentsComponent],
   exports:      [ ],
   providers:    [AuthGuard,DashboardService]
 })

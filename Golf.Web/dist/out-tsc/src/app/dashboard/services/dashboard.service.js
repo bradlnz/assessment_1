@@ -23,6 +23,7 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var config_service_1 = require("../../shared/utils/config.service");
 var base_service_1 = require("../../shared/services/base.service");
+var Rx_1 = require("rxjs/Rx");
 // Add the RxJS Observable operators we need in this app.
 require("../../rxjs-operators");
 var DashboardService = /** @class */ (function (_super) {
@@ -35,6 +36,17 @@ var DashboardService = /** @class */ (function (_super) {
         _this.baseUrl = configService.getApiURI();
         return _this;
     }
+    DashboardService.prototype.uploadDatasource = function (payload) {
+        var headers = new http_1.Headers();
+        headers.append('Accept', 'application/json, text/plain,');
+        var options = new http_1.RequestOptions({ headers: headers });
+        return this.http.post(this.baseUrl + "/import/upload", payload, options)
+            .map(function (res) {
+            var data = res.json();
+            return data;
+        })
+            .catch(function (error) { return Rx_1.Observable.throw(error); });
+    };
     DashboardService.prototype.getOrders = function () {
         var headers = new http_1.Headers();
         headers.append('Content-Type', 'application/json');
@@ -59,6 +71,33 @@ var DashboardService = /** @class */ (function (_super) {
         var authToken = localStorage.getItem('auth_token');
         headers.append('Authorization', "Bearer " + authToken);
         return this.http.post(this.baseUrl + "/orders/save", order, { headers: headers })
+            .map(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    DashboardService.prototype.getComponents = function () {
+        var headers = new http_1.Headers();
+        headers.append('Content-Type', 'application/json');
+        var authToken = localStorage.getItem('auth_token');
+        headers.append('Authorization', "Bearer " + authToken);
+        return this.http.get(this.baseUrl + "/component/get", { headers: headers })
+            .map(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    DashboardService.prototype.getComponent = function (id) {
+        var headers = new http_1.Headers();
+        headers.append('Content-Type', 'application/json');
+        var authToken = localStorage.getItem('auth_token');
+        headers.append('Authorization', "Bearer " + authToken);
+        return this.http.get(this.baseUrl + "/components/" + id, { headers: headers })
+            .map(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    DashboardService.prototype.saveComponent = function (component) {
+        var headers = new http_1.Headers();
+        headers.append('Content-Type', 'application/json');
+        var authToken = localStorage.getItem('auth_token');
+        headers.append('Authorization', "Bearer " + authToken);
+        return this.http.post(this.baseUrl + "/components/save", component, { headers: headers })
             .map(function (response) { return response.json(); })
             .catch(this.handleError);
     };

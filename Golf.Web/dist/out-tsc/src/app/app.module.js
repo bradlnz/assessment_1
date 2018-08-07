@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var authenticate_xhr_backend_1 = require("./authenticate-xhr.backend");
@@ -30,6 +31,7 @@ var AppModule = /** @class */ (function () {
                 header_component_1.HeaderComponent
             ],
             imports: [
+                router_1.RouterModule,
                 account_module_1.AccountModule,
                 dashboard_module_1.DashboardModule,
                 platform_browser_1.BrowserModule,

@@ -20,7 +20,7 @@ var AuthGuard = /** @class */ (function () {
     }
     AuthGuard.prototype.canActivate = function () {
         if (!this.user.isLoggedIn()) {
-            this.router.navigate(['/account/login']);
+            this.router.navigate(['']);
             return false;
         }
         return true;

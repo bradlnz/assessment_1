@@ -17,6 +17,10 @@ exports.routing = router_1.RouterModule.forChild([
             { path: 'orders', component: orders_component_1.OrdersComponent },
             { path: 'order_add', component: order_add_component_1.OrderAddComponent },
             { path: 'order_edit/:id', component: order_edit_component_1.OrderEditComponent },
+            { path: 'components', component: orders_component_1.OrdersComponent },
+            { path: 'component_add', component: order_add_component_1.OrderAddComponent },
+            { path: 'component_edit/:id', component: order_edit_component_1.OrderEditComponent },
+            { path: 'import', component: orders_component_1.OrdersComponent }
         ]
     }
 ]);

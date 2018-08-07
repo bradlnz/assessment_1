@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers } from '@angular/http';
+import { Headers, Http, RequestOptions, Response, URLSearchParams } from '@angular/http';
 
 import { Order } from '../../order'; 
 import { ComponentModel } from '../../component'; 
@@ -21,6 +21,24 @@ export class DashboardService extends BaseService {
   constructor(private http: Http, private configService: ConfigService) {
      super();
      this.baseUrl = configService.getApiURI();
+  }
+
+  uploadDatasource(payload): Observable<any[]> {
+    let headers = new Headers();
+
+    let authToken = localStorage.getItem('auth_token');
+    headers.append('Authorization', `Bearer ${authToken}`);
+    headers.append('Accept', 'application/json, text/plain,');
+    let options = new RequestOptions({ headers: headers });
+
+
+    return this.http.post(this.baseUrl + "/import/upload", payload, options)
+      .map((res: Response) => {
+        let data = res.json();
+        return data;
+      })
+      .catch(error => Observable.throw(error));
+
   }
 
   getOrders(): Observable<Array<Order>> {
