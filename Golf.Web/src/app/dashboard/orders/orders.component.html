@@ -2,7 +2,7 @@
   <div class="container">
     <div class="col-md-12">
       <a class="btn btn-primary" routerLink="../order_add" routerLinkActive="active">Add Order</a>
-      <button class="btn" ng-click="" style="float: right;">Import from CSV</button>
+      <button class="btn" routerLink="../import" routerLinkActive="active" style="float: right;">Import from CSV</button>
     </div>
   </div>
 
@@ -23,7 +23,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let item of orders" (click)="edit(item.id)">
+        <tr *ngFor="let item of orders" (click)="edit(item.id)" style="cursor: pointer;">
           <td>{{item.id}}</td>
           <td>{{item.number}}</td>
           <td>{{item.dateRequired}}</td>
