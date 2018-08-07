@@ -8334,23 +8334,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bradm\\.nuget\\packages\\": {},
+    "C:\\Users\\Brad\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Entities\\Golf.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Brad\\Documents\\assessment_1\\Golf.Entities\\Golf.Entities.csproj",
       "projectName": "Golf.Entities",
-      "projectPath": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Entities\\Golf.Entities.csproj",
-      "packagesPath": "C:\\Users\\bradm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Entities\\obj\\",
+      "projectPath": "C:\\Users\\Brad\\Documents\\assessment_1\\Golf.Entities\\Golf.Entities.csproj",
+      "packagesPath": "C:\\Users\\Brad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Brad\\Documents\\assessment_1\\Golf.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bradm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Brad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8363,8 +8363,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Helpers\\Golf.Helpers.csproj": {
-              "projectPath": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Helpers\\Golf.Helpers.csproj"
+            "C:\\Users\\Brad\\Documents\\assessment_1\\Golf.Helpers\\Golf.Helpers.csproj": {
+              "projectPath": "C:\\Users\\Brad\\Documents\\assessment_1\\Golf.Helpers\\Golf.Helpers.csproj"
             }
           }
         }

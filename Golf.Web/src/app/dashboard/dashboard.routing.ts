@@ -25,8 +25,8 @@ export const routing: ModuleWithProviders = RouterModule.forChild([
         { path: 'order_add', component: OrderAddComponent },
         { path: 'order_edit/:id', component: OrderEditComponent },
         { path: 'components', component: ComponentsComponent },
-        { path: 'component_add', component: ComponentAddComponent },
-        { path: 'component_edit/:id', component: ComponentEditComponent },
+        { path: 'component-add/:id', component: ComponentAddComponent },
+        { path: 'component-edit/:id', component: ComponentEditComponent },
         { path: 'import', component: ImportComponent }
       ]       
     }  

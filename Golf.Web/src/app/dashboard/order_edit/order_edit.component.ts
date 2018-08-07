@@ -26,6 +26,7 @@ export class OrderEditComponent implements OnInit {
   dateRequired: FormControl;
   description: FormControl;
   components: ComponentModel[];
+  orderId: string;
 
   constructor(private dashboardService: DashboardService, private route: ActivatedRoute, private router: Router) { }
 
@@ -43,11 +44,18 @@ export class OrderEditComponent implements OnInit {
     });
   }
 
+  navAddComponent() {
+    this.router.navigate(['dashboard', 'component-add', this.orderId])
+  }
+
   ngOnInit() {
     this.createFormControls();
     this.createForm();
 
     this.route.params.subscribe(params => {
+
+      this.orderId = params.id;
+
       this.dashboardService.getOrder(params.id).subscribe(response => {
         this.order.patchValue(response);
 

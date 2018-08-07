@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var ConfigService = /** @class */ (function () {
     function ConfigService() {
-        this._apiURI = 'http://localhost:51457/api';
+        this._apiURI = 'http://golf-api-brad.azurewebsites.net/api';
     }
     ConfigService.prototype.getApiURI = function () {
         return this._apiURI;

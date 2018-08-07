@@ -8,6 +8,8 @@ namespace Golf.ViewModels
 {
   public class ComponentViewModel : BaseViewModel
   {
+    public Guid Id { get; set; }
+
     public string Number { get; set; }
 
     public int? Quantity { get; set; }

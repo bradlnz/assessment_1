@@ -10,3 +10,15 @@ C:\Users\Brad\Documents\assessment_data\Golf.Helpers\obj\Release\netstandard2.0\
 C:\Users\Brad\Documents\assessment_data\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.csproj.CopyComplete
 C:\Users\Brad\Documents\assessment_data\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.dll
 C:\Users\Brad\Documents\assessment_data\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.pdb
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\bin\Release\netstandard2.0\Golf.Helpers.deps.json
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\bin\Release\netstandard2.0\Golf.Helpers.dll
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\bin\Release\netstandard2.0\Golf.Helpers.pdb
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\bin\Release\netstandard2.0\Golf.Models.dll
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\bin\Release\netstandard2.0\Golf.Models.pdb
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.csprojAssemblyReference.cache
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.AssemblyInfoInputs.cache
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.AssemblyInfo.cs
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.csproj.CopyComplete
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.dll
+C:\Users\Brad\Documents\assessment_1\Golf.Helpers\obj\Release\netstandard2.0\Golf.Helpers.pdb

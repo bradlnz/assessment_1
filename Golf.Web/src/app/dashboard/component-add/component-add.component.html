@@ -1,3 +1,23 @@
-<p>
-  component-add works!
-</p>
+<div class="row">
+  <div class="col-md-6">
+    <h2>Component Details</h2>
+    <form [formGroup]="component" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label>Number</label>
+        <input type="text"
+               class="form-control"
+               formControlName="number">
+      </div>
+      <div class="form-group">
+        <label>Quantity</label>
+        <input type="number"
+               class="form-control"
+               formControlName="quantity">
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+</div>

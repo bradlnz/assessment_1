@@ -10,10 +10,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var dashboard_service_1 = require("../services/dashboard.service");
+var router_1 = require("@angular/router");
 var ComponentsComponent = /** @class */ (function () {
-    function ComponentsComponent() {
+    function ComponentsComponent(dashboardService, router) {
+        this.dashboardService = dashboardService;
+        this.router = router;
     }
+    ComponentsComponent.prototype.edit = function (id) {
+        this.router.navigate(['dashboard', 'component-edit', id]);
+    };
     ComponentsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.dashboardService.getComponents().subscribe(function (response) {
+            _this.components = response;
+        }, function (error) {
+            //this.notificationService.printErrorMessage(error);
+        });
     };
     ComponentsComponent = __decorate([
         core_1.Component({
@@ -21,7 +34,7 @@ var ComponentsComponent = /** @class */ (function () {
             templateUrl: './components.component.html',
             styleUrls: ['./components.component.scss']
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, router_1.Router])
     ], ComponentsComponent);
     return ComponentsComponent;
 }());

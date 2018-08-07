@@ -31,11 +31,15 @@ var OrderEditComponent = /** @class */ (function () {
             description: this.description
         });
     };
+    OrderEditComponent.prototype.navAddComponent = function () {
+        this.router.navigate(['dashboard', 'component-add', this.orderId]);
+    };
     OrderEditComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.createFormControls();
         this.createForm();
         this.route.params.subscribe(function (params) {
+            _this.orderId = params.id;
             _this.dashboardService.getOrder(params.id).subscribe(function (response) {
                 _this.order.patchValue(response);
                 console.log(response);

@@ -7708,23 +7708,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bradm\\.nuget\\packages\\": {},
+    "C:\\Users\\Brad\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Models\\Golf.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Brad\\Documents\\assessment_1\\Golf.Models\\Golf.Models.csproj",
       "projectName": "Golf.Models",
-      "projectPath": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Models\\Golf.Models.csproj",
-      "packagesPath": "C:\\Users\\bradm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bradm\\Source\\Repos\\assessment_1\\Golf.Models\\obj\\",
+      "projectPath": "C:\\Users\\Brad\\Documents\\assessment_1\\Golf.Models\\Golf.Models.csproj",
+      "packagesPath": "C:\\Users\\Brad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Brad\\Documents\\assessment_1\\Golf.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bradm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Brad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

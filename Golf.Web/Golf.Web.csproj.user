@@ -6,6 +6,7 @@
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
-    <ToolsVersionPromptShown>2.8</ToolsVersionPromptShown>
+    <ToolsVersionPromptShown>2.9</ToolsVersionPromptShown>
+    <NameOfLastUsedPublishProfile>GolfWeb20180807123437 - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

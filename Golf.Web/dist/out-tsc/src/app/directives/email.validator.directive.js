@@ -29,7 +29,6 @@ var EmailValidator = /** @class */ (function () {
     EmailValidator.prototype.validate = function (c) {
         return this.validator(c);
     };
-    var EmailValidator_1;
     EmailValidator = EmailValidator_1 = __decorate([
         core_1.Directive({
             selector: '[validateEmail][ngModel],[validateEmail][formControl]',
@@ -40,6 +39,7 @@ var EmailValidator = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], EmailValidator);
     return EmailValidator;
+    var EmailValidator_1;
 }());
 exports.EmailValidator = EmailValidator;
 //# sourceMappingURL=email.validator.directive.js.map

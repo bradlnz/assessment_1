@@ -11,13 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var dashboard_service_1 = require("../services/dashboard.service");
+var router_1 = require("@angular/router");
 var ImportComponent = /** @class */ (function () {
-    function ImportComponent(dashboardService) {
+    function ImportComponent(dashboardService, router) {
         this.dashboardService = dashboardService;
+        this.router = router;
     }
     ImportComponent.prototype.ngOnInit = function () {
     };
     ImportComponent.prototype.uploadDatasource = function (fileInput) {
+        var _this = this;
         var file = fileInput.target.files[0];
         var fileName = file.name;
         var payload = {
@@ -28,6 +31,7 @@ var ImportComponent = /** @class */ (function () {
         this.dashboardService.uploadDatasource(formData)
             .subscribe(function (response) {
             console.log('UPLOADING success');
+            _this.router.navigate(['dashboard', 'orders']);
         }, function (error) {
             console.log('error', error);
         });
@@ -38,7 +42,7 @@ var ImportComponent = /** @class */ (function () {
             templateUrl: './import.component.html',
             styleUrls: ['./import.component.scss']
         }),
-        __metadata("design:paramtypes", [dashboard_service_1.DashboardService])
+        __metadata("design:paramtypes", [dashboard_service_1.DashboardService, router_1.Router])
     ], ImportComponent);
     return ImportComponent;
 }());

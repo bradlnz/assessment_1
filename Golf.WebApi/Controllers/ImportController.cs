@@ -71,14 +71,11 @@ namespace Golf.WebApi.Controllers
              _componentService.SaveComponent(component);
           }
 
-          return true;
+          
         }
 
-        return false;
+        return true;
       }
-
-
-
     }
   }
 

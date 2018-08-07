@@ -81,7 +81,7 @@ export class DashboardService extends BaseService {
     let authToken = localStorage.getItem('auth_token');
     headers.append('Authorization', `Bearer ${authToken}`);
 
-    return this.http.get(this.baseUrl + "/component/get", { headers })
+    return this.http.get(this.baseUrl + "/components/get", { headers })
       .map(response => response.json())
       .catch(this.handleError);
   }

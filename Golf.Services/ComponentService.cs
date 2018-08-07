@@ -25,13 +25,18 @@ namespace Golf.Services
     public bool SaveComponent(ComponentViewModel component)
     {
       var existingComponent = _componentRepository.Components().FirstOrDefault(a => a.Number == component.Number);
-      var order = _orderRepository.GetOrderById(component.OrderId);
+
+      if (existingComponent != null)
+      {
+        existingComponent.Number = component.Number;
+        existingComponent.Quantity = component.Quantity;
+      }
 
       var componentEntity = new Component
       {
         Number = component.Number,
         Quantity = component.Quantity,
-        Order = order
+        OrderId = component.OrderId
       };
 
       return _componentRepository.Save(existingComponent ?? componentEntity);

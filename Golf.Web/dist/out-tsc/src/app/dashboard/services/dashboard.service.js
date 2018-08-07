@@ -38,6 +38,8 @@ var DashboardService = /** @class */ (function (_super) {
     }
     DashboardService.prototype.uploadDatasource = function (payload) {
         var headers = new http_1.Headers();
+        var authToken = localStorage.getItem('auth_token');
+        headers.append('Authorization', "Bearer " + authToken);
         headers.append('Accept', 'application/json, text/plain,');
         var options = new http_1.RequestOptions({ headers: headers });
         return this.http.post(this.baseUrl + "/import/upload", payload, options)
@@ -79,7 +81,7 @@ var DashboardService = /** @class */ (function (_super) {
         headers.append('Content-Type', 'application/json');
         var authToken = localStorage.getItem('auth_token');
         headers.append('Authorization', "Bearer " + authToken);
-        return this.http.get(this.baseUrl + "/component/get", { headers: headers })
+        return this.http.get(this.baseUrl + "/components/get", { headers: headers })
             .map(function (response) { return response.json(); })
             .catch(this.handleError);
     };
