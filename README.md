@@ -1,4 +1,4 @@
-# assessment_1
+# GOLF APP
 
 1. To start you will need to download the latest .NET Core 2.1 SDK
 2. You will need to go and download the latest version of Node.JS v10.1
